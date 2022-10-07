@@ -22,6 +22,8 @@ wp-config.php
 
 # Example themes
 /wp-content/themes/twenty*/
+/wp-content/themes/sal*/
+/wp-content/themes/sal/acf*/
 
 # Example plugin
 /wp-content/plugins/hello.php
