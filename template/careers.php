@@ -9,7 +9,7 @@ get_header();
 get_template_part( 'parts/breadcrumb' );
 ?>
 
-		<div class="grid grid-cols-1 md:px-3 sm:px-4">
+		<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-0 px-auto flex justify-between flex-col">
             <!--Second Second-->
 			<?php
             if (have_rows("careers_cards")):
@@ -22,7 +22,7 @@ get_template_part( 'parts/breadcrumb' );
 
 							$icon = wp_get_attachment_image_src($card["careers_card_image"], 'full');
 							?>
-                            <div class="container md:mx-auto lg:px-0 md:px-4 sm:px-4 py-8 sm:mx-2">
+                            <div class="container md:mx-auto py-8 px-5 md:px-5 sm:px-5">
                                 <div class="grid grid-cols-1 gap-5 gap-y-5 md:grid-cols-1 sm:grid-cols-1">
                                     <div class="sal-card-home-wide rounded-lg shadow-md">
                                         <div class="lg:p-8 md:p-4 sm:p-4 px-12 dark:bg-gray-800">

@@ -51,30 +51,28 @@ html, body {
 
 }
 .sal-hero-bg-home {
-    /*background: url("../img/home-bg.png");*/
     background: url("../img/bg-hero-home.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /*height: 758px;*/
     margin-top: -70px;
-
 }
 .sal-hero-particle-cube {
     position: absolute;
-    width: 107.01px;
-    height: 107.01px;
+    width: 111.01px;
+    height: 111.01px;
     left: 169.19px;
     top: 360px;
     background: url("../img/cube.png");
     transform: rotate(6deg);
+    background-repeat: no-repeat;
 }
 .sal-hero-particle-cube-home {
     position: absolute;
-    width: 107.01px;
-    height: 107.01px;
-    left: 680.19px;
-    top: 423px;
+    width: 111.01px;
+    height: 111.01px;
+    left: 580.19px;
+    top: 523px;
     transform: rotate(6deg);
     background: url("../img/cube.png");
 }
@@ -84,7 +82,7 @@ html, body {
     height: 182px;
     left: 1154.25px;
     top: 307px;
-
+    background-repeat: no-repeat;
     background:url("../img/triangle.png");
     transform: rotate(22.02deg);
 }
@@ -92,27 +90,33 @@ html, body {
     position: absolute;
     width: 182px;
     height: 182px;
-    left: 1253.25px;
+    left: 1145.25px;
     top: 315px;
     background:url("../img/triangle.png");
     transform: rotate(22.02deg);
+    background-repeat: no-repeat;
 }
+
 .sal-hero-particle-cross {
     position: absolute;
-    width: 138px;
-    height: 138px;
+    width: 220px;
+    height: 220px;
     left: 1037.6px;
     top: 42px;
     background: url("../img/cross.png");
     transform: rotate(28.38deg);
-}.sal-hero-particle-cross-home {
+    background-repeat: no-repeat;
+
+}
+.sal-hero-particle-cross-home {
      position: absolute;
-     width: 138px;
-     height: 138px;
-     left: 808.09px;
+     width: 180px;
+     height: 180px;
+     left: 700.09px;
      top: 30.49px;
     background: url("../img/cross.png");
     transform: rotate(28.38deg);
+    background-repeat: no-repeat;
 }
 .sal-hero-particle-ball-1 {
     position: absolute;
@@ -121,14 +125,17 @@ html, body {
     left: 1274px;
     top: 112px;
     background: url("../img/ball-1.png");
+    background-repeat: no-repeat;
+
 }
 .sal-hero-particle-ball-1-home {
     position: absolute;
     width: 24px;
     height: 24px;
-    left: 1274px;
+    left: 1174px;
     top: 112px;
     background: url("../img/ball-1.png");
+    background-repeat: no-repeat;
 }
 .sal-hero-particle-ball-2 {
      position: absolute;
@@ -137,29 +144,31 @@ html, body {
      left: 217px;
      top: 186px;
     background: url("../img/ball-2.png");
+    background-repeat: no-repeat;
 }.sal-hero-particle-ball-2-home {
      position: absolute;
      width: 23px;
      height: 23px;
-     left: 802px;
+     left: 750px;
      top: 292px;
     background: url("../img/ball-2.png");
+     background-repeat: no-repeat;
 }
 .sal-hero-particle-ball-3-home {
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 1294px;
+    left: 1200px;
     top: 536px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: url("../img/ball-3.png");
+    background-repeat: no-repeat;
 }
 
 .sal-particle-game-character {
-    width: 400px;
-    height: 480px;
+    width: 500px;
+    max-width: 546px;
     /*margin-right: 80px;*/
-    top: 59px;
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
 .sal-lead {
@@ -181,52 +190,33 @@ html, body {
     color: #9B9B9B;
 
 }
-.sal-hero-title-home {
-    width: 690px;
-    height: 68px;
+.sal-lead-parallax-2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #9B9B9B;
 
+}
+.sal-hero-title-home {
     font-style: normal;
     font-weight: 800;
     font-size: 44px;
     line-height: 121%;
-    /* or 77px */
-
-
     color: #FFFFFF;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 .sal-hero-btn-home {
      width: 222px;
      height: 48px;
      background: var(--sal--primary--color);
      border-radius: 100px;
-
-     /* Inside auto layout */
-     flex: none;
-     order: 2;
-     flex-grow: 0;
     color: var(--sal--text--white)
 }
 .sal-breadcrumb-title{
-    /* Careers */
-
-
-    width: 690px;
-    height: 68px;
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
     line-height: 121%;
-    /* or 77px */
-
     text-align: center;
-
     color: #FFFFFF;
 }
 .sal-lead-footer {
@@ -253,21 +243,16 @@ html, body {
 }
 
 .sal-games-home{
-width: 100%;
-    max-width: 100%;
+    /*min-width: 300px;*/
+    /*min-height: 300px;*/
+
 }
-.sal-mns-home {
-    width: 418px;
-    height: 482px;
-}
+
 .sal-home-about-title {
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 121%;
-    /* or 44px */
-    display: flex;
-    align-items: center;
     color: #FFFFFF;
 }
 .sal-card-home {
@@ -354,8 +339,8 @@ width: 100%;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
-     width: 100% !important;
-    height: 50vh;
+    /* width: 100% !important;*/
+    /*height: 50vh;*/
  }
 
 .sal-counter-item {
@@ -374,7 +359,6 @@ width: 100%;
     font-style: normal;
     font-weight: 800;
     font-size: 42px;
-    line-height: 102%;
     text-align: center;
     color:#ffffff;
     margin: 0;
@@ -386,7 +370,17 @@ width: 100%;
     font-weight: 500;
     font-size: 12px;
     line-height: 193.1%;
-
     text-align: center;
     color: #9B9B9B;
+}
+
+
+/*Accordion*/
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content.active {
+    display: block;
 }

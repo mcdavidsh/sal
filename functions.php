@@ -41,6 +41,7 @@ if ( ! function_exists( 'sal_styles' ) ) :
 	function sal_styles() {
 		wp_enqueue_style( 'tailwindcss',get_template_directory_uri(). '/assets/css/tailwind.min.css');
 		wp_enqueue_style( 'globalcss',get_template_directory_uri(). '/assets/css/global.min.css');
+		wp_enqueue_style( 'responsivecss',get_template_directory_uri(). '/assets/css/responsive.min.css');
 	}
 
 endif;
