@@ -543,7 +543,7 @@
                                 {
                                     "key": "field_633f8a123f5a9",
                                     "label": "Accordion Title",
-                                    "name": "about_Accordion_title",
+                                    "name": "about_accordion_title",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -612,5 +612,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665109417
+    "modified": 1665159692
 }

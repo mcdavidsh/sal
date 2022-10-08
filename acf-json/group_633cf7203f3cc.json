@@ -60,6 +60,119 @@
             "append": ""
         },
         {
+            "key": "field_6340bc23bf335",
+            "label": "Game Cards",
+            "name": "home_game_cards",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_633ea074839c3": {
+                    "key": "layout_633ea074839c3",
+                    "name": "home_game_card_section",
+                    "label": "Game Card Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6340bc23bf336",
+                            "label": "Game Card Items",
+                            "name": "home_game_card_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6340bc23bf337",
+                                    "label": "Game Card Link",
+                                    "name": "home_game_card_link",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "parent_repeater": "field_6340bc23bf336"
+                                },
+                                {
+                                    "key": "field_6340bc23bf338",
+                                    "label": "Game Card Background Image",
+                                    "name": "home_game_card_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_6340bc23bf336"
+                                },
+                                {
+                                    "key": "field_6340bc23bf339",
+                                    "label": "Game Card Caption",
+                                    "name": "home_game_card_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6340bc23bf336"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        },
+        {
             "key": "field_633f4231f6241",
             "label": "Hero button Link",
             "name": "home_hero_button_link",
@@ -789,5 +902,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665105442
+    "modified": 1665188342
 }

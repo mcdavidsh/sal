@@ -59,10 +59,28 @@ get_header();
 		</div>
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-8 px-5 md:px-5 sm:px-5">
         <h2 class="sal-intro-title-home text-center my-6"><?php the_field("home_first_section_caption") ?></h2>
-	    <?php $isec =  wp_get_attachment_image_src(get_field("home_first_section_image"), 'full'); ?>
 
-        <img src="<?php echo $isec[0] ?>"
-             class="mt-3 h-auto sal-games-home" alt="Our Games">
+        <div class="grid grid-cols-7 gap-6 sal-slider-wrapper">
+          <?php  if (have_rows("home_cards")):
+            while(have_rows("home_game_cards")): the_row();
+            if (get_row_layout() == "home_game_card_section"):
+
+            $cards = get_sub_field("home_game_card_items");
+
+            foreach ($cards as $card):
+
+            $icon = wp_get_attachment_image_src($card["home_game_card_image"], 'full');
+            ?>
+                <a href="<?php echo $card["home_game_card_link"]?>" title="<?php echo $card["home_game_card_title"]?>" style="background: url('<?php echo $icon[0]?>'); background-size:cover; background-repeat: no-repeat; background-position: center center " class="block p-6 max-w-sm rounded-2xl w-full  py-16 mx-auto px-16 sal-slider-item">
+                </a>
+            <?php
+            endforeach;
+			            endif;
+		            endwhile;
+	            endif; ?>
+
+        </div>
+
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-8 px-5 md:px-5 sm:px-5">
         <div class="flex md:flex-none lg:flex-none md:justify-start lg:justify-start">

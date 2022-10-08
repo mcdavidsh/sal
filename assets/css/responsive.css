@@ -102,4 +102,32 @@
         left: 354px;
         top: 324px;
     }
+    /*Carousel*/
+    .sal-slider-wrapper {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 2.5rem;
+    }
+    .sal-slider-item {
+        animation: animate 25s alternate linear infinite;
+    }
+    .sal-slider-wrapper:hover .sal-slider-item  {
+        animation-play-state: paused;
+    }
+    @keyframes animate {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-1100px, 0, 0);
+        }
+    }
+
+    .sal-slider-wrapper {
+        width: 95%;
+        border-radius: 0;
+        padding: 0;
+    }
 }

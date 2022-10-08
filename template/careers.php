@@ -37,7 +37,7 @@ get_template_part( 'parts/breadcrumb' );
                                             </div>
 
                                             <p class="py-5 font-normal text-gray-500 sal-card-text  dark:text-gray-400"><?php echo $card["careers_card_description"] ?></p>
-                                            <div class="py-5 rounded-md shadow flex items-center justify-center lex items-center justify-center">
+                                            <div class="py-5 rounded-md flex items-center justify-center lex items-center justify-center">
                                                 <a href="<?php echo $card["careers_card_button_link"] ?>"
                                                    class="inline-flex items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium text-indigo-600 sal-hero-btn-home"><?php echo $card["careers_card_button_text"] ?></a>
                                             </div>

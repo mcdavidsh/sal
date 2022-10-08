@@ -103,9 +103,9 @@ function sal_dependencies() {
 }
 if (function_exists("acf_add_options_page")) {
 	acf_add_options_page([
-		'page_title'=>'Website Options',
-		'menu_title'=>'Website Options',
-		'menu_slug'=>'website-options',
+		'page_title'=>'Sal Options',
+		'menu_title'=>'Sal Options',
+		'menu_slug'=>'sal-options',
 		'capability'=>'edit_posts',
 		'icon_url'=>'dashicons-admin-tools',
 	]);
