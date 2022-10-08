@@ -1,5 +1,5 @@
 
-@media only screen and  (max-width: 567px) {
+@media only screen and  (max-width: 767px) {
     .sal-parallax-2-home {
         background: linear-gradient(0deg, rgba(240, 184, 41, 0.6), rgba(240, 184, 41, 0.6)), url("../img/second-parallax-bg.png");
         background-repeat: no-repeat;

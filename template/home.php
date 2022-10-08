@@ -60,7 +60,8 @@ get_header();
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-8 px-5 md:px-5 sm:px-5">
         <h2 class="sal-intro-title-home text-center my-6"><?php the_field("home_first_section_caption") ?></h2>
 
-        <div class="grid grid-cols-7 gap-6 sal-slider-wrapper">
+
+        <div class="grid grid-cols-7 gap-6 sal-slider-wrapper md:grid-cols-4 md:gap-4 lg:grid-cols-7 lg:gap-6">
           <?php  if (have_rows("home_cards")):
             while(have_rows("home_game_cards")): the_row();
             if (get_row_layout() == "home_game_card_section"):
