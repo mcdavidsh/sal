@@ -5,8 +5,7 @@ Post Type: page
 */
 get_header();
 
-?>
-<?php get_template_part( 'parts/breadcrumb' ); ?>
+get_template_part( 'parts/breadcrumb' ); ?>
 
 
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-0 px-auto flex justify-between flex-col">

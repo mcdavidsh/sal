@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem Ipsom Dolor Sit",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -34,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus neque a mollis vestibulum. Aenean malesuada enim Aenean malesuada enim",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -53,7 +53,119 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Learn More",
+            "default_value": "Get in touch Today",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_633f28c6e5ff5",
+            "label": "Counter",
+            "name": "home_counter",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_633f3fb936961": {
+                    "key": "layout_633f3fb936961",
+                    "name": "home_counter_section",
+                    "label": "Counter Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_633f40bc8c510",
+                            "label": "Counter Item",
+                            "name": "home_counter_item",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Counter",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_633f28eee5ff6",
+                                    "label": "Counter Caption",
+                                    "name": "home_counter_caption",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_633f40bc8c510"
+                                },
+                                {
+                                    "key": "field_633f294be5ff7",
+                                    "label": "Counter Number",
+                                    "name": "home_counter_number",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_633f40bc8c510"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        },
+        {
+            "key": "field_633f45af6b8fb",
+            "label": "First Section Caption",
+            "name": "home_first_section_caption",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Some of our Games",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -337,7 +449,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "About us",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -380,7 +492,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -399,7 +511,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Get in touch Today",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -437,7 +549,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Get in touch Today",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -456,7 +568,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.",
             "maxlength": "",
             "rows": "",
             "placeholder": "",
@@ -491,7 +603,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Get in touch Today",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -534,7 +646,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Advertising",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -544,7 +656,7 @@
             "key": "field_633f0d58b3d7e",
             "label": "Parallax One Description",
             "name": "home_parallax_one_description",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -553,11 +665,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         },
         {
             "key": "field_633f0d6bb3d7f",
@@ -572,7 +684,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Get in touch Today",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -610,7 +722,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Frequently Asked Questions",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -720,7 +832,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem Ipsom Dolor Sit",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -730,7 +842,7 @@
             "key": "field_633f283e35f34",
             "label": "Parallax Two Description",
             "name": "home_parallax_two_description",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -739,147 +851,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper turpis a tincidunt commodo. Cras in nisl vitae lacus fermentum semper non et massa.",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_633f28c6e5ff5",
-            "label": "Counter",
-            "name": "home_counter",
-            "type": "flexible_content",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layouts": {
-                "layout_633f3fb936961": {
-                    "key": "layout_633f3fb936961",
-                    "name": "home_counter_section",
-                    "label": "Counter Section",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_633f40bc8c510",
-                            "label": "Counter Item",
-                            "name": "home_counter_item",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "layout": "table",
-                            "min": 0,
-                            "max": 0,
-                            "collapsed": "",
-                            "button_label": "Add Counter",
-                            "rows_per_page": 20,
-                            "sub_fields": [
-                                {
-                                    "key": "field_633f28eee5ff6",
-                                    "label": "Counter Caption",
-                                    "name": "home_counter_caption",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_633f40bc8c510"
-                                },
-                                {
-                                    "key": "field_633f294be5ff7",
-                                    "label": "Counter Number",
-                                    "name": "home_counter_number",
-                                    "type": "number",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "min": "",
-                                    "max": "",
-                                    "placeholder": "",
-                                    "step": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_633f40bc8c510"
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                }
-            },
-            "min": "",
-            "max": "",
-            "button_label": "Add Row"
-        },
-        {
-            "key": "field_633f45af6b8fb",
-            "label": "First Section Caption",
-            "name": "home_first_section_caption",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_633f45c66b8fc",
-            "label": "First Section Image",
-            "name": "home_first_section_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
+            "new_lines": ""
         }
     ],
     "location": [
@@ -902,5 +878,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665188342
+    "modified": 1665195474
 }

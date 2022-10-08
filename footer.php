@@ -11,7 +11,8 @@
         <div>
             <h2 class="mb-6 text-sm font-semibold text-white capitalize dark:text-white">Contact Us</h2>
             <p class="sal-lead-footer mt-2 mb-3"><?php the_field( "footer_contact_description", "options" ) ?></p>
-            <form>
+            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
+                <input type="hidden" name="sal_contact_footer_form" value="sal_contact_footer_form">
                 <div class="mb-6">
                     <input type="text" id="name"
                            class="sal-input-bg text-gray-900 text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700 "

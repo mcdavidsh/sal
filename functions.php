@@ -30,6 +30,8 @@ if ( ! function_exists( 'sal_support' ) ) :
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
 
+		add_theme_support( 'post-thumbnails' );
+
 	}
 
 endif;
@@ -110,3 +112,34 @@ if (function_exists("acf_add_options_page")) {
 		'icon_url'=>'dashicons-admin-tools',
 	]);
 }
+
+//Submit Footer Form
+
+if (!function_exists('sal_handle_form_footer_submit')) {
+	function sal_handle_form_footer_submit() {
+
+		if (isset($_REQUEST["sal_contact_footer_form"])) {
+			$name = $_POST["name"];
+			$senderEmail = $_POST["email"];
+			$message = $_POST["message"];
+			$subject     = get_option( "blogname" ) . "Contact Form Message";
+			$headers  = "From: $name <$senderEmail>\n";
+			$headers .= 'X-Mailer: PHP/' . phpversion();
+			$headers .= "X-Priority: 1\n"; // Urgent message!
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-Type: text/html; charset=iso-8859-1\n";
+			$to          = get_option( "admin_email" );
+			$attachments = "";
+			$sent        = wp_mail( $to, $subject, $message, $headers, $attachments );
+			if ( ! $sent ) {
+				echo "<span class='error'>Problem in sending mail.</span>";
+			} else {
+				echo "<span class='success'>Hi, thank you for the message.</span>";
+			}
+		}
+
+	}
+}
+
+add_action( 'admin_post_nopriv_sal_contact_footer_form', 'sal_handle_form_footer_submit' );
+add_action( 'admin_post_sal_contact_footer_form', 'sal_handle_form_footer_submit' );
