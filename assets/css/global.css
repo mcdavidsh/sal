@@ -17,6 +17,7 @@
     --sal--primary--color:#A854EE;
     --sal--input--bg--color:#343538;
     --sal-footer-dark:#151515;
+    /*--sal--text-color:*/
 }
 
 html, body {
@@ -24,10 +25,14 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:normal;
     color: var(--sal--text--white);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
 }
 
 
+.sal-text-white {
+    color: var(--sal--text--white) !important;
+}
 .sal-bg-primary {
    background: var(--sal--primary--color) !important;
 }
@@ -41,13 +46,69 @@ html, body {
 .sal-secondary-dark-bg {
  background: var(--sal-footer-dark) !important;
 }
+.sal-header-logo{
+    width: 137px;
+    height: 65px;
+}
+.sal-footer-logo {
+    width: 137px;
+    height: 65px;
+}
+.sal-footer-form-btn {
+    padding: 0 38px;
+    width: 345px;
+    height: 56px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.sal-form-input{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    width: 345px;
+    height: 48px;
+
+    /* Dark/Text */
+
+
+    color: #8C8C8C;
+}  .sal-footer-nav-lg {
+    display: block;
+   }
+.sal-footer-nav-sm {
+    display: none;
+}
+
+
+.sal-form-textarea {
+    width: 345px;
+    height: 136px;
+}
+.sal-section-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+
+    color: var(--sal--text--white) !important;
+}
+.sal-section-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 121%;
+}
 .sal-hero-bg {
     background: url("../img/hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 536px;
-    margin-top: -70px;
+    margin-top: -90px;
+
 
 }
 .sal-hero-bg-home {
@@ -55,7 +116,10 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin-top: -70px;
+    margin-top: -90px;
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 60px 0 60px;
 }
 .sal-hero-particle-cube {
     position: absolute;
@@ -75,6 +139,7 @@ html, body {
     top: 523px;
     transform: rotate(6deg);
     background: url("../img/cube.png");
+    background-repeat: no-repeat;
 }
 .sal-hero-particle-triangle {
     position: absolute;
@@ -88,8 +153,9 @@ html, body {
 }
 .sal-hero-particle-triangle-home {
     position: absolute;
-    width: 182px;
-    height: 182px;
+    background-size: 170px 170px;
+    width: 170px;
+    height: 170px;
     left: 1145.25px;
     top: 315px;
     background:url("../img/triangle.png");
@@ -168,9 +234,12 @@ html, body {
 .sal-particle-game-character {
     width: 500px;
     max-width: 546px;
+    position: relative;
+    z-index: 99;
     /*margin-right: 80px;*/
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
+
 .sal-lead {
     font-style: normal;
     font-weight: 500;
@@ -198,6 +267,13 @@ html, body {
 
 }
 .sal-hero-title-home {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 121%;
+    color: #FFFFFF;
+}
+.sal-title-parallax-2{
     font-style: normal;
     font-weight: 800;
     font-size: 44px;
@@ -258,6 +334,9 @@ html, body {
 .sal-card-home {
     background: var(--sal-footer-dark);
     border-radius: 5px;
+    width: 202px;
+    /*height: 204px;*/
+
 }
 .sal-card-home-wide {
     background: var(--sal-footer-dark);
@@ -285,15 +364,13 @@ html, body {
 
 .sal-card-title-home {
 
-     font-style: normal;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 208%;
-     /* or 33px */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 208%;
+    /* or 33px */
 
-     text-align: center;
-
-     color: #FFFFFF;
+    text-align: center;
 }
 .sal-card-title {
 
@@ -306,15 +383,14 @@ html, body {
      color: #FFFFFF;
 }
 .sal-card-text-home {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 208%;
-      /* or 29px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 208%;
+    /* or 29px */
 
-      text-align: center;
-
-      color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
 }
 .sal-card-text {
       font-style: normal;
@@ -331,16 +407,28 @@ html, body {
      background-size: cover;
      background-position: center center;
      width: 100% !important;
-     padding: 0 !important;
-     margin:0 !important;
  }
+ .sal-parallax-one-image {
+     width: 600px;
+     height: auto;
+ }
+.sal-parallax-one-image-lg {
+display: block;
+    width: 600px;
+    height: auto;
+}
+.sal-parallax-one-image-sm {
+display:none
+}
 .sal-parallax-2-home {
      background: url("../img/second-parallax-bg.png");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
-    /* width: 100% !important;*/
+     width: 100% !important;
     /*height: 50vh;*/
+    max-width: 1440px;
+    padding: 75px 85px ;
  }
 
 .sal-counter-item {
@@ -377,11 +465,92 @@ html, body {
 
 /*Accordion*/
 
+.accordion-header {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 120%;
+
+}
 .accordion-content {
     display: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.85);
+
+
+
 }
+
 
 .accordion-content.active {
     display: block;
+    transition: all 1s;
 }
 
+.sal-accordion-container {
+
+    background: var(--sal--primary--color);
+    border-radius: 10px;
+    /* Inside auto layout */
+
+}
+
+/*Carousel*/
+.sal-slider-wrapper {
+    /*display: flex;*/
+    width: 100%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    /*padding: 2.5rem;*/
+}
+.sal-slider-item {
+    animation: right-animate 25s linear infinite;
+    max-width: 185px;
+    width: 185px;
+    max-height: 164px;
+    height: 164px;
+}
+.sal-slider-wrapper:hover .sal-slider-item   {
+    animation-play-state: paused;
+}
+@keyframes right-animate {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1100px, 0, 0);
+    }
+}
+
+.sal-slider-wrapper:hover .sal-slider-item-left   {
+    animation-play-state: paused;
+}
+.sal-slider-item-left {
+    animation: left-animate 25s linear infinite;
+    max-width: 185px;
+    width: 185px;
+    max-height: 164px;
+    height: 164px;
+}
+@keyframes left-animate {
+
+    0% {
+        transform: translate3d(-1100px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.accordion-arrow {
+    transform: rotate(-90deg);
+    color:#ffffff;
+}
+.accordion-arrow-180 {
+    transform: rotate(-0deg);
+    transition: all 1s;
+    color:#ffffff;
+}

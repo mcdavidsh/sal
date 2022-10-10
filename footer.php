@@ -1,35 +1,74 @@
-<?php wp_footer() ?>
-<footer class="sal-secondary-dark-bg dark:bg-gray-900 px-0 md:px-10 lg:px-10">
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-8 px-6 flex flex-col justify-center text-center md:flex-none md:flex-row  md:text-left lg:flex-none lg:flex-row lg:justify-start ">
-        <div class="flex flex-col">
+<?php wp_footer();
+
+		$menuLocations = get_nav_menu_locations();
+		$footermenu    = $menuLocations['secondary'];
+		$footerNav     = wp_get_nav_menu_items( $footermenu );
+		?>
+<footer class="sal-secondary-dark-bg sal-footer  dark:bg-gray-900 px-0 md:px-10 lg:px-10 flex flex-col justify-between md:flex-none lg:flex-none ">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-8 px-8 flex flex-col justify-center text-center md:flex-none md:flex-row  md:text-left lg:flex-none lg:flex-row lg:justify-start ">
+        <div class="flex flex-col ">
             <a href="<?php echo get_site_url() ?>" class="flex items-center object-center mx-auto md:mx-0 lg:mx-0">
 				<?php $footlogo = wp_get_attachment_image_src( get_field( "home_page_logo", "options" ), 'full' ); ?>
-                <img src="<?php echo $footlogo[0] ?>" class="h-8 sm:h-9" alt="Social Ads Limited"/>
+                <img src="<?php echo $footlogo[0] ?>" class="h-8 sm:h-9 sal-footer-logo" alt="Social Ads Limited"/>
             </a>
             <p class="sal-lead-footer mt-2 mb-3"><?php the_field( "footer_about_description", "options" ) ?></p>
+            <nav class="bg-dark border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 sal-footer-nav-sm">
+                <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+                    <div class=" w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="flex flex-col p-4 mt-4 bg-dark  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:bg-dark dark:bg-gray-800 md:dark:bg-gray-900 ">
+					        <?php
+					        if ( wp_get_nav_menu_items( $footermenu ) !== false ) {
+
+						        foreach ( $footerNav as $navItem ):
+							        ?>
+                                    <li>
+                                        <a href="<?php echo $navItem->url ?>"
+                                           class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><?php echo $navItem->title ?></a>
+                                    </li>
+						        <?php endforeach;
+					        } else {
+
+						        ?>
+                                <li>
+                                    <a href="/about"
+                                       class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                                        Us</a>
+                                </li>
+                                <!--                        aria-current=""-->
+                                <li>
+                                    <a href="/careers"
+                                       class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Careers</a>
+                                </li>
+
+					        <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
         <div>
             <h2 class="mb-6 text-sm font-semibold text-white capitalize dark:text-white">Contact Us</h2>
             <p class="sal-lead-footer mt-2 mb-3"><?php the_field( "footer_contact_description", "options" ) ?></p>
             <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
                 <input type="hidden" name="sal_contact_footer_form" value="sal_contact_footer_form">
-                <div class="mb-6">
+                <div class="mb-3">
                     <input type="text" id="name"
-                           class="sal-input-bg text-gray-900 text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700 "
+                           class="sal-input-bg text-gray-900 text-sm rounded-lg sal-form-input focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700 "
                            name="name" placeholder="Name" required="">
                 </div>
-                <div class="mb-6">
+                <div class="mb-3">
                     <input type="email" id="email"
-                           class="sal-input-bg text-gray-900 text-sm rounded-lg focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700 "
+                           class="sal-input-bg text-gray-900 text-sm rounded-lg sal-form-input focus:ring-blue-500  block w-full p-2.5 dark:bg-gray-700 "
                            name="email" placeholder="Email" required="">
                 </div>
-                <div class="mb-6">
+                <div class="mb-3">
                     <textarea id="message" rows="4"
-                              class="block p-2.5 w-full text-sm text-gray-900 sal-input-bg rounded-lg dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white "
+                              class="block p-2.5 w-full sal-form-textarea text-sm text-gray-900 sal-input-bg rounded-lg dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white "
                               placeholder="Message"></textarea>
                 </div>
                 <button type="submit"
-                        class="text-white sal-bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        class="sal-footer-form-btn text-white sal-bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Submit
                 </button>
             </form>
@@ -94,31 +133,26 @@
             </div>
         </div>
     </div>
-    <div class="py-6 px-4 bg-dark dark:bg-gray-700 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-center md:text-justify lg:text-justify flex justify-center md:flex md:justify-center md:justify-between md:items-baseline">
+    <div class="py-6 px-px-8 bg-dark dark:bg-gray-700 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-center md:text-justify lg:text-justify flex justify-center md:flex md:justify-center md:justify-between md:items-baseline">
 
-		<?php
-		$menuLocations = get_nav_menu_locations();
-		$footermenu    = $menuLocations['secondary'];
-		$footerNav     = wp_get_nav_menu_items( $footermenu );
-		?>
-        <nav class="bg-dark border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+        <nav class="bg-dark border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 sal-footer-nav-lg">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
 
                 <div class=" w-full md:block md:w-auto" id="navbar-default">
                     <ul class="flex flex-col p-4 mt-4 bg-dark  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:bg-dark dark:bg-gray-800 md:dark:bg-gray-900 ">
-						<?php
-						if ( wp_get_nav_menu_items( $footermenu ) !== false ) {
+					    <?php
+					    if ( wp_get_nav_menu_items( $footermenu ) !== false ) {
 
-							foreach ( $footerNav as $navItem ):
-								?>
+						    foreach ( $footerNav as $navItem ):
+							    ?>
                                 <li>
                                     <a href="<?php echo $navItem->url ?>"
                                        class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><?php echo $navItem->title ?></a>
                                 </li>
-							<?php endforeach;
-						} else {
+						    <?php endforeach;
+					    } else {
 
-							?>
+						    ?>
                             <li>
                                 <a href="/about"
                                    class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
@@ -130,12 +164,12 @@
                                    class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Careers</a>
                             </li>
 
-						<?php } ?>
+					    <?php } ?>
                     </ul>
                 </div>
             </div>
         </nav>
-        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2022 <a
+        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center sal-footer-copyright">© 2022 <a
                     href="<?php echo get_site_url() ?>"><?php echo get_bloginfo() ?></a>. All Rights Reserved.
         </span>
     </div>

@@ -1,11 +1,78 @@
 
-@media only screen and  (max-width: 767px) {
-    .sal-parallax-2-home {
-        background: linear-gradient(0deg, rgba(240, 184, 41, 0.6), rgba(240, 184, 41, 0.6)), url("../img/second-parallax-bg.png");
+@media only screen and  (max-width: 567px) {
+
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+
+    .sal-hero-bg-home {
+        overflow: hidden !important;
+        display: none;
+    }
+    .sal-parallax-home {
+        display: flex;
+        flex-flow: column-reverse;
         background-repeat: no-repeat;
         background-size: cover;
+        /*background-position: center center ;*/
+        background: url("../img/parallax-bg-mobile.png");
+    }
+    .sal-parallax-2-home {
+        background-image: linear-gradient(0deg, rgba(240, 184, 41, 0.6), rgba(240, 184, 41, 0.6)),url("../img/alien.png");
+        background-repeat: no-repeat !important;
+        background-size: 60%;
         background-position: center right;
         color: #000000 !important;
+    }
+    .sal-parallax-2-home {
+        background-color: #f0b829;
+        background-repeat: no-repeat !important;
+        background-size: 60%;
+        background-position: center right;
+        color: #000000 !important;
+    }
+    .sal-title-parallax-2{
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 121%;
+        /* or 39px */
+
+        text-align: center;
+
+        color: #000000;
+
+
+        /* Inside auto layout */
+
+    }
+    .sal-parallax-2-home {
+        padding: 25px;
+    }
+    footer.sal-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 25p;
+    }
+    .sal-footer-nav-lg {
+        display: none;
+    }
+
+    .sal-footer-nav-sm {
+        display: block;
+    }
+
+
+    .sal-lead--parallax-2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+
+        color: #000000;
     }
 
     .sal-title-parallax-2, .sal-lead-parallax-2 {
@@ -28,7 +95,10 @@
     }
     .sal-particle-game-character {
         width: 200px;
-        margin-left: 60px;
+        /*margin-left: 50px;*/
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
     }
 
     .sal-hero-particle-cube-home {
@@ -40,7 +110,7 @@
     }
     .sal-hero-particle-ball-2-home {
         position: absolute;
-        left: 106.62px;
+        left: 60.62px;
         top: 642.67px;
         background-repeat: no-repeat;
         background-size: 11.4px 11.4px;
@@ -54,7 +124,7 @@
     }
     .sal-hero-particle-ball-1-home {
         position: absolute;
-        left: 340.66px;
+        left: 240.66px;
         top: 553.42px;
         background-repeat: no-repeat;
         background-size: 11.9px 11.9px;
@@ -62,8 +132,9 @@
     .sal-hero-particle-cross-home {
         /*display: none;*/
         position: absolute;
-        left: 209.64px;
-        top: 510px;
+        left: 20.64px;
+        top: 550px;
+        transform: rotate(28.38deg);
         background-size: 68.43px 68.43px;
         background-repeat: no-repeat;
     }
@@ -71,8 +142,9 @@
         position: absolute;
         background-repeat: no-repeat;
         background-size: 90.25px 90.25px;
-        left: 230.37px;
+        left: 220.37px;
         top: 654.07px;
+        transform: rotate(22.02deg);
     }
 
 /* Bread Crumb*/
@@ -102,32 +174,12 @@
         left: 354px;
         top: 324px;
     }
-    /*Carousel*/
-    .sal-slider-wrapper {
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-        padding: 2.5rem;
-    }
-    .sal-slider-item {
-        animation: animate 25s alternate linear infinite;
-    }
-    .sal-slider-wrapper:hover .sal-slider-item  {
-        animation-play-state: paused;
-    }
-    @keyframes animate {
-        0% {
-            transform: translate3d(0, 0, 0);
-        }
-        100% {
-            transform: translate3d(-1100px, 0, 0);
-        }
-    }
 
-    .sal-slider-wrapper {
-        width: 95%;
-        border-radius: 0;
-        padding: 0;
+    .sal-parallax-one-image-lg {
+        display: none;
+    }
+    .sal-parallax-one-image-sm {
+        display:block;
+        width: 258px;
     }
 }
