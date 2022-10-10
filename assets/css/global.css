@@ -150,6 +150,7 @@ html, body {
     background-repeat: no-repeat;
     background:url("../img/triangle.png");
     transform: rotate(22.02deg);
+
 }
 .sal-hero-particle-triangle-home {
     position: absolute;
@@ -246,6 +247,8 @@ html, body {
     font-size: 16px;
     line-height: 170%;
     /* or 27px */
+    position: relative;
+    z-index: 99;
 
     text-align: center;
 

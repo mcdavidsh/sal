@@ -8,7 +8,8 @@
 
     .sal-hero-bg-home {
         overflow: hidden !important;
-        display: none;
+        max-width: 100vw;
+        width: 100vw;
     }
     .sal-parallax-home {
         display: flex;
@@ -145,6 +146,7 @@
         left: 220.37px;
         top: 654.07px;
         transform: rotate(22.02deg);
+        width: 30%;
     }
 
 /* Bread Crumb*/

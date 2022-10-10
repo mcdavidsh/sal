@@ -62,7 +62,7 @@ get_header();
         <h2 class="sal-intro-title-home text-center my-6"><?php the_field("home_first_section_caption") ?></h2>
 
 
-        <div class="grid grid-cols-7 gap-x-56 gap-y-10 md:grid-cols-7 md:gap-x-56 md:gap-y-10 lg:grid-cols-7 lg:gap-y-10 lg:gap-x-56 sal-slider-wrapper flex justify-between">
+        <div class="grid grid-cols-7 gap-x-52 gap-y-10 md:grid-cols-7 md:gap-x-52 md:gap-y-10 lg:grid-cols-7 lg:gap-y-10 lg:gap-x-52 sal-slider-wrapper flex justify-between">
           <?php  if (have_rows("home_cards")):
             while(have_rows("home_game_cards")): the_row();
             if (get_row_layout() == "home_game_card_section"):
