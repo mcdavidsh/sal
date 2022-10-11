@@ -56,19 +56,19 @@ html, body {
 }
 .sal-footer-form-btn {
     padding: 0 38px;
-    width: 345px;
+    /*width: 345px;*/
     height: 56px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    /*line-height: 17px;*/
 }
 .sal-form-input{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    width: 345px;
+    /*width: 345px;*/
     height: 48px;
 
     /* Dark/Text */
@@ -84,7 +84,7 @@ html, body {
 
 
 .sal-form-textarea {
-    width: 345px;
+    /*width: 345px;*/
     height: 136px;
 }
 .sal-section-text{
@@ -237,7 +237,6 @@ html, body {
     max-width: 546px;
     position: relative;
     z-index: 99;
-    /*margin-right: 80px;*/
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
 
@@ -267,6 +266,7 @@ html, body {
     font-weight: 500;
     font-size: 14px;
     color: #9B9B9B;
+    max-width:1044px
 
 }
 .sal-hero-title-home {
@@ -410,6 +410,7 @@ html, body {
      background-size: cover;
      background-position: center center;
      width: 100% !important;
+     max-width:1044px
  }
  .sal-parallax-one-image {
      width: 600px;
@@ -432,6 +433,7 @@ display:none
     /*height: 50vh;*/
     max-width: 1440px;
     padding: 75px 85px ;
+    max-width:1044px
  }
 
 .sal-counter-item {

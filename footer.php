@@ -47,10 +47,10 @@
                 </div>
             </nav>
         </div>
-        <div>
+        <div class="flex flex-col align-center justify-center md:flex-none lg:flex-none">
             <h2 class="mb-6 text-sm font-semibold text-white capitalize dark:text-white">Contact Us</h2>
             <p class="sal-lead-footer mt-2 mb-3"><?php the_field( "footer_contact_description", "options" ) ?></p>
-            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
+            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST" >
                 <input type="hidden" name="sal_contact_footer_form" value="sal_contact_footer_form">
                 <div class="mb-3">
                     <input type="text" id="name"
@@ -68,7 +68,7 @@
                               placeholder="Message"></textarea>
                 </div>
                 <button type="submit"
-                        class="sal-footer-form-btn text-white sal-bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        class="w-full rounded sal-footer-form-btn text-white sal-bg-primary hover:bg-blue-800">
                     Submit
                 </button>
             </form>
