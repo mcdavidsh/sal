@@ -24,7 +24,7 @@
     <nav class="bg-transparent bg-opacity-0 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
         <div class="container flex flex-wrap justify-center items-center md:flex md:flex-wrap md:justify-between md:items-center lg:flex lg:flex-wrap lg:justify-between lg:items-center mx-auto">
             <a href="<?php echo get_site_url()?>" class="flex items-center mx-auto md:mx-0 object-center">
-                <img src="<?php echo $logo?>" class="mr-0 md:mr-3 lg:mr-3 h-9 sm:h-9 lg:mx-0" alt="Social Ads Limited Logo" />
+                <img src="<?php echo $logo?>" class="mr-0 md:mr-3 lg:mr-3 h-9 sal-header-logo sm:h-9 lg:mx-0" alt="Social Ads Limited Logo" />
             </a>
             <button data-collapse-toggle="navbar-default" type="button" class="hidden p-2 ml-0 md:ml-3 lg:ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>

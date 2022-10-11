@@ -51,6 +51,10 @@
 
         /* Inside auto layout */
 
+
+    }
+    .sal-hero-title-home {
+        text-align: left;
     }
     .sal-parallax-2-home {
         padding: 25px;
@@ -359,17 +363,14 @@
         width: 100vw;
     }
     .sal-parallax-home {
-        /*display: flex;*/
-        /*flex-flow: column-reverse;*/
-        /*background-repeat: no-repeat;*/
-        background-size: cover;
-        /*background-position: center center ;*/
         background: url("../img/parallax-bg.png");
-        background-position: center center;
     }
     .sal-parallax-one-image-lg {
         display: block;
         width: auto;
+    }
+    .sal-hero-title-home {
+        text-align: left;
     }
     .sal-parallax-one-image-sm {
         display:none;
@@ -377,10 +378,6 @@
     }
     .sal-parallax-2-home {
     url("../img/second-parallax-bg.png");
-        background-repeat: no-repeat !important;
-        background-size: cover;
-        background-position: center right;
-        color: white !important;
     }
     .sal-parallax-2-home {
         background-color: #f0b829;
